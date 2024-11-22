@@ -1,0 +1,79 @@
+
+*{
+  text-align: center;
+  color:#FF6500;
+  font-family: 'Courier New', Courier, monospace;
+  background-color:#0B192C ;
+}
+h1{
+ font-weight: bolder;
+ border-radius: 50px;
+ border: 2px solid black;
+ background-color:#1E3E62;
+ box-shadow: 10px 10px 10px black;
+
+}
+.container{
+  width: auto;
+ height: auto;
+ text-align: center;
+ padding-top: 15px;
+ padding-bottom:15px;
+ line-height: 10px;
+
+}
+.todo-list{
+  text-align: center;
+}
+.todo-item{
+  text-align: center;
+  border: white 2px solid;
+  height: auto;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+
+}
+
+input{
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: 1px solid ;
+}
+
+button{
+  height: 30px;
+  border: 2px solid ;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+select{
+  margin-left: 20px;
+  height: 30px;
+  border: 1px solid ;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+input:hover{
+  background-color: white;
+}
+button:hover{
+ border:2px solid white;
+}
+select:hover{
+  background-color: white;
+}
+input::placeholder{
+  color:#FF6500;
+}
+.todo-item:hover{
+  border-color: red;
+}

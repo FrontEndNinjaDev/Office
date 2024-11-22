@@ -1,0 +1,219 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #E6F7FF; /* Light sky blue background */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar  {
+    background-color: #0099FF; /* Sky blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  button{
+    background-color: #0099FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: -30px;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar .nav-links {
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #005f99;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #80D4FF;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+  }
+  
+  /* Products Section */
+  .products-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .products-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0099FF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .products-container {
+      flex-direction: column;
+    }
+  
+    .hero-content h1 {
+      font-size: 2em;
+    }
+  
+    .hero-content p {
+      font-size: 1em;
+    }
+  }
+  
+  /* General Button Styles */
+.btn {
+    background-color: #0099FF; /* Sky blue background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #005f99; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+  }
+  
+  .btn:active {
+    background-color: #004c80; /* Even darker on click */
+    transform: scale(0.98); /* Shrink slightly when clicked */
+  }
+  
+  /* Button in Hero Section */
+  .hero .btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #005f99; /* Darker shade for hero button */
+  }
+  
+  .hero .btn:hover {
+    background-color: #003d66; /* Darkest blue on hover */
+  }
+  
+  /* Button in Product Card */
+  .product-card .btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+  
+ /* Styles for showing/hiding user info */
+.user-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .user-info {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .user-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Optional styling for image hover */
+  .user-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  

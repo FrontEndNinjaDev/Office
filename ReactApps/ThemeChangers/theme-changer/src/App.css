@@ -1,0 +1,58 @@
+/* Default styles for light theme */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-light {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .navbar-dark {
+    background-color: #333;
+    color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .navbar-light ul, .navbar-dark ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-light li, .navbar-dark li {
+    cursor: pointer;
+  }
+  
+  /* Main content styles */
+  .main-light {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .main-dark {
+    background-color: #333;
+    color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Button styles */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

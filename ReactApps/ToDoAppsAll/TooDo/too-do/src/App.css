@@ -1,0 +1,78 @@
+
+*{
+  background-color: #003135;
+  
+}
+
+.input-container{
+  text-align: left;
+  color: #964734;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: #afdde5;
+  border: 2px solid white;
+  margin-bottom: 20px;
+  
+}
+
+.input-container{
+  display: flex;
+  justify-content: left;
+  margin: auto;
+  color: #afdde5
+
+}
+
+.input-title{
+  margin-left:10px;
+  color: #afdde5
+}
+.input-todo{
+  margin-left: 90px;
+  color: #afdde5
+}
+
+.input-disc{
+  margin-left: 80px;
+  color: #afdde5
+}
+
+
+.title-list{
+  display: inline-flex;
+  margin-left: 50px;
+  color: #afdde5
+  }
+
+
+.title-todo{
+  margin-left: 190px;
+  color: #afdde5
+}
+.title-disc{
+  margin-left: 300px;
+  color: #afdde5
+}
+
+#checkbox{
+  float: inline-end;
+  height: 20px;
+  width: 25px;
+  color: #afdde5
+}
+button{
+  color: #afdde5;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+input{
+  border: 2px solid white;
+  border-radius:50px ;
+  height: 30px;
+  width: 200px;
+}

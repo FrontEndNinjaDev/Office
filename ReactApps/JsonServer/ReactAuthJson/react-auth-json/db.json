@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "69f3",
+      "username": "hello",
+      "password": "world"
+    },
+    {
+      "id": "2243",
+      "username": "Hello",
+      "password": "Kali",
+      "email": "Linux"
+    },
+    {
+      "id": "ff43",
+      "username": "ankit",
+      "password": "pratap",
+      "email": "thelogodesigner1@gmail.com"
+    }
+  ]
+}

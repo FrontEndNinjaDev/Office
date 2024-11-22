@@ -1,0 +1,341 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: cursive;
+}
+
+ .box{
+  background: linear-gradient(90deg, #070000 0%, #4c0001 50%, #070000 100%)
+}
+
+/* Body and General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ad5389; /* Teal color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease-out; /* Header fades in from the top */
+}
+
+/* Navbar Container */
+nav {
+  background-color: #ad5389; /* Teal background */
+ /* Padding around the navbar */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  position: sticky; /* Sticky navbar */
+  top: 0; /* Sticks to the top of the page */
+  z-index: 100; /* Keeps it above other content */
+  transition: background-color 0.3s ease;
+  animation: fadeInDown 1.2s ease-out; /* Navbar fades in from the top */
+ max-height: 120px;
+ box-shadow: 10px 10px 10px black;
+}
+
+/* Unordered List - Navigation Links */
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center items */
+  align-items: center; /* Vertically align items */
+}
+
+/* Individual List Items */
+nav ul li {
+  margin: 0 2rem; /* Space between the list items */
+}
+
+/* Navigation Links */
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* White text color */
+  font-size: 1.1rem; /* Font size */
+  font-family: 'Arial', sans-serif; /* Font family */
+  text-transform: uppercase; /* Uppercase text */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover transition */
+  padding: 0.5rem 0; /* Vertical padding */
+  position: relative; /* For positioning the border effect */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+  color: #e0f7fa; /* Light teal color on hover */
+  animation: pulse 0.3s ease-out; /* Subtle pulse effect on hover */
+}
+
+/* Active Link */
+nav ul li a.active {
+  color: #ffd54f; /* Golden yellow for active link */
+  border-bottom: 2px solid #ffd54f; /* Active link underline */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  nav ul li {
+    margin: 1rem 0; /* Add more margin between items */
+  }
+}
+
+/* Smooth Navbar Change on Scroll */
+#navbar.scrolled {
+  background-color: #ad5389; /* Darker teal on scroll */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in; /* Main content fades in smoothly */
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-in-out; /* Each section fades in */
+}
+
+/* Section Headings */
+h2 {
+  color: #008080; /* Teal color */
+  margin-bottom: 15px;
+}
+
+/* Articles Styling */
+article {
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  animation: fadeInUp 1.3s ease-out; /* Article fades in with an upward motion */
+}
+
+article:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  color: #005757; /* Darker teal for headings */
+}
+
+article p {
+  margin: 10px 0;
+}
+
+article a {
+  color: #008080; /* Teal color */
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #008080; /* Teal color */
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: fadeInUp 1.5s ease-out; /* Footer fades in with an upward motion */
+}
+
+/* Signup Form Container */
+.signup-container {
+  max-width: 500px; /* Set a max width for the form */
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 20px;
+  background: white; /* White background for the form */
+  border: 1px solid #eaeaea; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: fadeIn 0.8s ease-in-out; /* The form fades in smoothly */
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Add padding for better touch targets */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #008080; /* Teal border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Buttons */
+button {
+  background-color: #008080; /* Teal color for buttons */
+  color: white; /* White text for buttons */
+  border: none; /* Remove border */
+  padding: 10px 15px; /* Add padding to buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Space above button */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: fadeIn 0.8s ease-in-out; /* Button fades in smoothly */
+}
+
+button:hover {
+  background-color: #005757; /* Darker teal on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Search Results */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  height: auto;
+  overflow-y: auto;
+  animation: fadeInDown 1s ease-in; /* Dropdown fades in smoothly */
+}
+
+.results-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block; /* Ensure vertical stacking */
+}
+
+.result-item {
+  display: block; /* Ensure each item is a block and takes full width */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.result-item:hover {
+  background-color: #f0f0f0;
+  animation: pulse 0.3s ease-out; /* Pulse effect on hover */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .search-container {
+    width: 90%;
+    max-width: none;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .result-item {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+article{
+  box-shadow: 10px 10px 10px black;
+  width: auto;
+}
